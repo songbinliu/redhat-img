@@ -20,7 +20,7 @@ spec:
     volumeMounts:
     - name: vmt-config
       mountPath: /etc/kubeturbo
-      readonly: false
+      readonly: true
   volumes:
   - name: vmt-config
     hostPath:
