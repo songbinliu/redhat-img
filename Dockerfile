@@ -7,7 +7,7 @@ LABEL name="Kubeturbo" \
       version="5.9" \
       release="1" \
       summary="Performance assurance for the applications in Openshift" \
-      description="Kubeturbo will manage the applications, pods and VMs in Openshift cluster" \
+      description="Kubeturbo leverages Turbonomic control platform, in order to assure the performance of micro-services running in OpenShift, as well as the efficiency of underlying infrastructure." \
 ### Required labels above - recommended below
       url="http://www.turbonomic.com" \
       run='docker run -tdi --name ${NAME} vmturbo/kubeturbo:latest' \
