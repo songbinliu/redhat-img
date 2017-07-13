@@ -1,0 +1,28 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: kubeturbo-openshift
+  labels:
+    name: kubeturbo
+spec:
+  nodeSelector:
+    role: master
+  containers:
+  - name: kubeturbo-235
+    image: red:v1 
+    args:
+      - --v=3
+      - --usevmware=true
+      - --kubeconfig=/etc/kubeturbo/admin.kubeconfig
+      - --turboconfig=/etc/kubeturbo/config
+      - --kubelet-port=10250
+      - --kubelet-https=true
+    volumeMounts:
+    - name: vmt-config
+      mountPath: /etc/kubeturbo
+      readonly: false
+  volumes:
+  - name: vmt-config
+    hostPath:
+      path: /etc/kubeturbo
+  restartPolicy: Always
