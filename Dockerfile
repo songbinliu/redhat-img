@@ -11,7 +11,7 @@ LABEL name="Kubeturbo" \
 ### Required labels above - recommended below
       url="http://www.turbonomic.com" \
       run='docker run -tdi --name ${NAME} vmturbo/kubeturbo:latest' \
-      io.k8s.description="Kubeturbo will monitor the objects in Openshift, and manage these objects. " \
+      io.k8s.description="Kubeturbo will monitor and control the entire stack, from OpenShift down to your underlying infrastructure. " \
       io.k8s.display-name="Kubeturbo" \
       io.openshift.expose-services="" \
       io.openshift.tags="turbonomic,kubeturbo"
