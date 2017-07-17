@@ -23,6 +23,8 @@ COPY help.md /tmp/
 ### add licenses to this directory
 COPY licenses /licenses
 
+COPY Dockerfile /Dockerfile
+
 #EXPOSE 10265
 
 ### Add necessary Red Hat repos here
