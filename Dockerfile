@@ -23,7 +23,7 @@ COPY help.md /tmp/
 ### add licenses to this directory
 COPY licenses /licenses
 
-EXPOSE 10265
+#EXPOSE 10265
 
 ### Add necessary Red Hat repos here
 RUN REPOLIST=rhel-7-server-rpms,rhel-7-server-optional-rpms \
