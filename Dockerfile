@@ -2,19 +2,19 @@ FROM registry.access.redhat.com/rhel7
 MAINTAINER Red Hat Systems Engineering <refarch-feedback@redhat.com>
 
 ### Atomic/OpenShift Labels - https://github.com/projectatomic/ContainerApplicationGenericLabels
-LABEL name="Container Management Platform" \
+LABEL name="Hybrid Cloud Container" \
       vendor="Turbonomic" \
       version="5.9" \
       release="1" \
       summary="Performance assurance for the applications in Openshift" \
-      description="Container Management Platform leverages Turbonomic control platform, to assure the performance of micro-services running in OpenShift, as well as the efficiency of underlying infrastructure." \
+      description="Hybrid Cloud Container leverages Turbonomic control platform, to assure the performance of micro-services running in OpenShift, as well as the efficiency of underlying infrastructure." \
 ### Required labels above - recommended below
       url="http://www.turbonomic.com" \
       run='docker run -tdi --name ${NAME} vmturbo/kubeturbo:latest' \
-      io.k8s.description="Container Management Platform will monitor and control the entire stack, from OpenShift down to your underlying infrastructure. " \
-      io.k8s.display-name="Container Management Platform" \
+      io.k8s.description="Hybrid Cloud Container will monitor and control the entire stack, from OpenShift down to your underlying infrastructure. " \
+      io.k8s.display-name="Hybrid Cloud Container" \
       io.openshift.expose-services="" \
-      io.openshift.tags="turbonomic,Container Management Platform"
+      io.openshift.tags="turbonomic,Hybrid Cloud Container"
 
 ### Atomic Help File - Write in Markdown, it will be converted to man format at build time.
 ### https://github.com/projectatomic/container-best-practices/blob/master/creating/help.adoc
