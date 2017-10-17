@@ -1,5 +1,6 @@
 FROM registry.access.redhat.com/rhel7
-MAINTAINER Red Hat Systems Engineering <refarch-feedback@redhat.com>
+MAINTAINER Enlin Xu <enlin.xu@turbonomic.com>
+
 
 ### Atomic/OpenShift Labels - https://github.com/projectatomic/ContainerApplicationGenericLabels
 LABEL name="Hybrid Cloud Container" \
