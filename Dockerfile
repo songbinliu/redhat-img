@@ -36,6 +36,7 @@ RUN REPOLIST=rhel-7-server-rpms,rhel-7-server-optional-rpms \
     yum -y install --disablerepo "*" --enablerepo ${REPOLIST} --setopt=tsflags=nodocs ${INSTALL_PKGS} && \
 ### help file markdown to man conversion
     go-md2man -in /tmp/help.md -out /help.1 && \
+    yum -y update-minimal --security --sec-severity=Important --sec-severity=Critical --setopt=tsflags=nodocs \
     yum clean all
 
 ### Setup user for build execution and application runtime
