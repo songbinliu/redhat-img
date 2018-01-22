@@ -1,6 +1,11 @@
 # redhat-img
 Docker file to generate kubeturbo container image according to redhat's requirement
 
+# login a Redhat machine and register 
+```console
+subscription-manager register --auto-attach --username=<userName> --password=<passWord>
+```
+
 # build it
 As it will install pkgs from RedHat repos, it is necessary to build this image from a RHEL machine which has registered the subscription from RedHat.
 
