@@ -1,4 +1,4 @@
-FROM registry.access.redhat.com/rhel7
+FROM registry.access.redhat.com/rhel7:7.4-129
 MAINTAINER Enlin Xu <enlin.xu@turbonomic.com>
 
 
