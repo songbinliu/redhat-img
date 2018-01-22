@@ -47,7 +47,7 @@ ENV PATH=$PATH:${APP_ROOT}/bin
 
 RUN mkdir -p ${APP_ROOT}/bin
 
-## use a dummy script to repreasent the real kubeturbo for testing
+## use a dummy script to represent the real kubeturbo for testing
 #COPY kubeturbo.sh ${APP_ROOT}/bin/kubeturbo
 COPY kubeturbo ${APP_ROOT}/bin/kubeturbo
 RUN chmod -R ug+x ${APP_ROOT}/bin && sync && \
