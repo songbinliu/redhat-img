@@ -38,7 +38,7 @@ If there is an error during push:
 dda6e8dfdcf7: Waiting 
 unauthorized: authentication required
 ```
-Then set up the credentials for docker hub manually. In add/change an item in `~/.docker/config.json`:
+Then set up the credentials for docker hub manually. Add/change an item in `~/.docker/config.json`:
 ```json
 {
 
