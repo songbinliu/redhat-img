@@ -49,7 +49,7 @@ Then set up the credentials for docker hub manually. Add/change an item in `~/.d
    
 }
 ```
-> Note: the auth field should be `username:password` base64 encoded. for example: "username:password" base64 encoded is "dXNlcm5hbWU6cGFzc3dvcmQ="
+> Note: the auth field should be `username:password` [base64 encoded](https://www.base64encode.org). for example: "username:password" base64 encoded is "dXNlcm5hbWU6cGFzc3dvcmQ="
 
 
 
