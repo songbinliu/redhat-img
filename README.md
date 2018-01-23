@@ -18,7 +18,7 @@ docker build -t <mytag> .
 sh run.sh
 ```
 
-# push image to docker hup
+# push image to docker hub
 
 Login docker hub first:
 ```console
