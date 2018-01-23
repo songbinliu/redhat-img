@@ -18,6 +18,13 @@ docker build -t <mytag> .
 sh run.sh
 ```
 
+# push image to redhat registry
+```console
+docker login -u unused -e none registry.rhc4tp.openshift.com:443
+docker tag $imageId registry.rhc4tp.openshift.com:443/$accountId/$tag
+docker push registry.rhc4tp.openshift.com:443/$accountId/$tag
+```
+
 # push image to docker hub
 
 Login docker hub first:
@@ -27,8 +34,8 @@ Login docker hub first:
 
 Then build the image, and push it into docker hub.
 ```console
-docker build -t docker.io/beekman9527/kubeturbo:redhat
-docker push docker.io/beekman9527/kubeturbo:redhat
+docker build -t docker.io/vmturbo/kubeturbo:<tag>
+docker push docker.io/vmturbo/kubeturbo:<tag>
 ```
 
 ### fix push error
@@ -50,7 +57,6 @@ Then set up the credentials for docker hub manually. Add/change an item in `~/.d
 }
 ```
 > Note: the auth field should be `username:password` [base64 encoded](https://www.base64encode.org). for example: "username:password" base64 encoded is "dXNlcm5hbWU6cGFzc3dvcmQ="
-
 
 
 # Reference
