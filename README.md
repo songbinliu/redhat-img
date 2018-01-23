@@ -41,12 +41,12 @@ unauthorized: authentication required
 Then set up the credentials for docker hub manually. In add/change an item in `~/.docker/config.json`:
 ```json
 {
-{
+
 	"auths": {
 		"https://index.docker.io/v1/": {
 			"auth": "dXNlcm5hbWU6cGFzc3dvcmQ="
 		},
-   ....
+   
 }
 ```
 > Note: the auth field should be `username:password` base64 encoded. for example: "username:password" base64 encoded is "dXNlcm5hbWU6cGFzc3dvcmQ="
